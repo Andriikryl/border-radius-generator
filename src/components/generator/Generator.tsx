@@ -14,32 +14,30 @@ export default function Generator() {
   const [generatorVolumeG, setGeneratorVolumeG] = React.useState(60);
   const [generatorVolumeH, setGeneratorVolumeH] = React.useState(40);
 
-  const handleVolumeChange = (newVolume: React.SetStateAction<number>) => {
+  const handleVolumeChange = (newVolume: number) => {
     setGeneratorVolume(newVolume);
   };
-  const handleVolumeChangeSecond = (
-    newVolume: React.SetStateAction<number>
-  ) => {
+  const handleVolumeChangeSecond = (newVolume: number) => {
     setGeneratorVolumeSecond(newVolume);
   };
 
-  const handleVolumeChangeThree = (newVolume: React.SetStateAction<number>) => {
+  const handleVolumeChangeThree = (newVolume: number) => {
     setGeneratorVolumeThree(newVolume);
   };
-  const handleVolumeChangeFour = (newVolume: React.SetStateAction<number>) => {
+  const handleVolumeChangeFour = (newVolume: number) => {
     setGeneratorVolumeFour(newVolume);
   };
-  const handleVolumeChangeE = (newVolume: React.SetStateAction<number>) => {
+  const handleVolumeChangeE = (newVolume: number) => {
     setGeneratorVolumeE(newVolume);
   };
 
-  const handleVolumeChangeF = (newVolume: React.SetStateAction<number>) => {
+  const handleVolumeChangeF = (newVolume: number) => {
     setGeneratorVolumeF(newVolume);
   };
-  const handleVolumeChangeG = (newVolume: React.SetStateAction<number>) => {
+  const handleVolumeChangeG = (newVolume: number) => {
     setGeneratorVolumeG(newVolume);
   };
-  const handleVolumeChangeH = (newVolume: React.SetStateAction<number>) => {
+  const handleVolumeChangeH = (newVolume: number) => {
     setGeneratorVolumeH(newVolume);
   };
 
