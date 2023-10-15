@@ -184,3 +184,52 @@
   hsl(55deg 100% 50%) 100%
 );
 }
+
+
+.code__box{
+    margin-block-start: 100px;
+    max-width: 300px;
+}
+
+.code__roule{
+    border: 3px solid #da4167;
+    border-bottom: none;
+    padding: 20px;
+    display: block;
+    width: 100%;
+    margin-inline-end: 10px;
+    font-size: 20px;
+    color: #fffcff;
+}
+
+.code__valum{
+    display: inline-block;
+    background-color: #fffcff;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.code__valum span:nth-child(1){
+    color: #ef476f;
+}
+.code__valum span:nth-child(2){
+    color: #c8b6ff;
+}
+.code__valum span:nth-child(3){
+    color:  #540d6e;
+}
+.code__valum span:nth-child(4){
+    color:  #d64045;
+}
+.code__valum span:nth-child(5){
+    color:  #70e000;
+}
+.code__valum span:nth-child(6){
+    color:  #2ec4b6;
+}
+.code__valum span:nth-child(7){
+    color:  #ff6700;
+}
+.code__valum span:nth-child(8){
+    color:  #00a6fb;
+}

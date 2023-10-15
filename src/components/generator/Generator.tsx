@@ -83,60 +83,75 @@ export default function Generator() {
               numberLabel="d-number"
             ></InputFrame>
           </div>
-          <div className={style.main__box}>
-            <div
-              style={{
-                borderRadius: `${generatorVolume}% ${generatorVolumeSecond}% ${generatorVolumeThree}% ${generatorVolumeFour}%  / ${generatorVolumeE}% ${generatorVolumeF}% ${generatorVolumeG}% ${generatorVolumeH}%`,
-              }}
-              className={style.inner__box}
-            ></div>
-            <div
-              className={style.a__description}
-              style={{ width: `${generatorVolume}%` }}
-            >
-              <span>a</span>
+          <div>
+            <div className={style.main__box}>
+              <div
+                style={{
+                  borderRadius: `${generatorVolume}% ${generatorVolumeSecond}% ${generatorVolumeThree}% ${generatorVolumeFour}%  / ${generatorVolumeE}% ${generatorVolumeF}% ${generatorVolumeG}% ${generatorVolumeH}%`,
+                }}
+                className={style.inner__box}
+              ></div>
+              <div
+                className={style.a__description}
+                style={{ width: `${generatorVolume}%` }}
+              >
+                <span>a</span>
+              </div>
+              <div
+                className={style.b__description}
+                style={{ width: `${generatorVolumeSecond}%` }}
+              >
+                <span>b</span>
+              </div>
+              <div
+                className={style.e__description}
+                style={{ height: `${generatorVolumeE}%` }}
+              >
+                <span>e</span>
+              </div>
+              <div
+                className={style.h__description}
+                style={{ height: `${generatorVolumeH}%` }}
+              >
+                <span>h</span>
+              </div>
+              <div
+                className={style.d__description}
+                style={{ width: `${generatorVolumeFour}%` }}
+              >
+                <span>d</span>
+              </div>
+              <div
+                className={style.c__description}
+                style={{ width: `${generatorVolumeThree}%` }}
+              >
+                <span>c</span>
+              </div>
+              <div
+                className={style.f__description}
+                style={{ height: `${generatorVolumeF}%` }}
+              >
+                <span>f</span>
+              </div>
+              <div
+                className={style.g__description}
+                style={{ height: `${generatorVolumeG}%` }}
+              >
+                <span>g</span>
+              </div>
             </div>
-            <div
-              className={style.b__description}
-              style={{ width: `${generatorVolumeSecond}%` }}
-            >
-              <span>b</span>
-            </div>
-            <div
-              className={style.e__description}
-              style={{ height: `${generatorVolumeE}%` }}
-            >
-              <span>e</span>
-            </div>
-            <div
-              className={style.h__description}
-              style={{ height: `${generatorVolumeH}%` }}
-            >
-              <span>h</span>
-            </div>
-            <div
-              className={style.d__description}
-              style={{ width: `${generatorVolumeFour}%` }}
-            >
-              <span>d</span>
-            </div>
-            <div
-              className={style.c__description}
-              style={{ width: `${generatorVolumeThree}%` }}
-            >
-              <span>c</span>
-            </div>
-            <div
-              className={style.f__description}
-              style={{ height: `${generatorVolumeF}%` }}
-            >
-              <span>f</span>
-            </div>
-            <div
-              className={style.g__description}
-              style={{ height: `${generatorVolumeG}%` }}
-            >
-              <span>g</span>
+            <div className={style.code__box}>
+              <span className={style.code__roule}>border-radius:</span>
+              <code className={style.code__valum}>
+                <span>{generatorVolume}%</span>{" "}
+                <span>{generatorVolumeSecond}% </span>
+                <span>{generatorVolumeThree}%</span>{" "}
+                <span>{generatorVolumeFour}%</span>/
+                <span>{generatorVolumeE}%</span>{" "}
+                <span>{generatorVolumeF}%</span>{" "}
+                <span>{generatorVolumeG}% </span>{" "}
+                <span>{generatorVolumeH}%,</span>{" "}
+              </code>
             </div>
           </div>
           <div className={style.form__group}>
