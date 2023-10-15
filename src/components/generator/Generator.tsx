@@ -5,14 +5,14 @@ import style from "./style.module.css";
 import { InputFrame } from "../inputFrame/InputFrame";
 
 export default function Generator() {
-  const [generatorVolume, setGeneratorVolume] = React.useState(79);
-  const [generatorVolumeSecond, setGeneratorVolumeSecond] = React.useState(71);
-  const [generatorVolumeThree, setGeneratorVolumeThree] = React.useState(63);
-  const [generatorVolumeFour, setGeneratorVolumeFour] = React.useState(100);
-  const [generatorVolumeE, setGeneratorVolumeE] = React.useState(100);
-  const [generatorVolumeF, setGeneratorVolumeF] = React.useState(100);
-  const [generatorVolumeG, setGeneratorVolumeG] = React.useState(100);
-  const [generatorVolumeH, setGeneratorVolumeH] = React.useState(100);
+  const [generatorVolume, setGeneratorVolume] = React.useState(70);
+  const [generatorVolumeSecond, setGeneratorVolumeSecond] = React.useState(30);
+  const [generatorVolumeThree, setGeneratorVolumeThree] = React.useState(30);
+  const [generatorVolumeFour, setGeneratorVolumeFour] = React.useState(70);
+  const [generatorVolumeE, setGeneratorVolumeE] = React.useState(60);
+  const [generatorVolumeF, setGeneratorVolumeF] = React.useState(40);
+  const [generatorVolumeG, setGeneratorVolumeG] = React.useState(60);
+  const [generatorVolumeH, setGeneratorVolumeH] = React.useState(40);
 
   const handleVolumeChange = (newVolume: React.SetStateAction<number>) => {
     setGeneratorVolume(newVolume);
@@ -88,6 +88,54 @@ export default function Generator() {
               }}
               className={style.inner__box}
             ></div>
+            <div
+              className={style.a__description}
+              style={{ width: `${generatorVolume}%` }}
+            >
+              <span>a</span>
+            </div>
+            <div
+              className={style.b__description}
+              style={{ width: `${generatorVolumeSecond}%` }}
+            >
+              <span>b</span>
+            </div>
+            <div
+              className={style.e__description}
+              style={{ height: `${generatorVolumeE}%` }}
+            >
+              <span>e</span>
+            </div>
+            <div
+              className={style.h__description}
+              style={{ height: `${generatorVolumeH}%` }}
+            >
+              <span>h</span>
+            </div>
+            <div
+              className={style.d__description}
+              style={{ width: `${generatorVolumeFour}%` }}
+            >
+              <span>d</span>
+            </div>
+            <div
+              className={style.c__description}
+              style={{ width: `${generatorVolumeThree}%` }}
+            >
+              <span>c</span>
+            </div>
+            <div
+              className={style.f__description}
+              style={{ height: `${generatorVolumeF}%` }}
+            >
+              <span>f</span>
+            </div>
+            <div
+              className={style.g__description}
+              style={{ height: `${generatorVolumeG}%` }}
+            >
+              <span>g</span>
+            </div>
           </div>
           <div className={style.form__group}>
             <InputFrame
