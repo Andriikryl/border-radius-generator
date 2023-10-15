@@ -47,6 +47,7 @@ export default function Generator() {
         <div className={style.flex__group}>
           <div className={style.form__group}>
             <InputFrame
+              className={style.form__a}
               value={generatorVolume}
               set={setGeneratorVolume}
               min={0}
@@ -55,6 +56,7 @@ export default function Generator() {
               numberLabel="a-number"
             ></InputFrame>
             <InputFrame
+              className={style.form__b}
               value={generatorVolumeSecond}
               set={setGeneratorVolumeSecond}
               min={0}
@@ -63,6 +65,7 @@ export default function Generator() {
               numberLabel="b-number"
             ></InputFrame>
             <InputFrame
+              className={style.form__c}
               value={generatorVolumeThree}
               set={setGeneratorVolumeThree}
               min={0}
@@ -71,6 +74,7 @@ export default function Generator() {
               numberLabel="c-number"
             ></InputFrame>
             <InputFrame
+              className={style.form__d}
               value={generatorVolumeFour}
               set={setGeneratorVolumeFour}
               min={0}
@@ -137,6 +141,7 @@ export default function Generator() {
           </div>
           <div className={style.form__group}>
             <InputFrame
+              className={style.form__e}
               value={generatorVolumeE}
               set={setGeneratorVolumeE}
               min={0}
@@ -145,6 +150,7 @@ export default function Generator() {
               numberLabel="e-number"
             ></InputFrame>
             <InputFrame
+              className={style.form__f}
               value={generatorVolumeF}
               set={setGeneratorVolumeF}
               min={0}
@@ -153,6 +159,7 @@ export default function Generator() {
               numberLabel="f-number"
             ></InputFrame>
             <InputFrame
+              className={style.form__g}
               value={generatorVolumeG}
               set={setGeneratorVolumeG}
               min={0}
@@ -161,6 +168,7 @@ export default function Generator() {
               numberLabel="g-number"
             ></InputFrame>
             <InputFrame
+              className={style.form__h}
               value={generatorVolumeH}
               set={setGeneratorVolumeH}
               min={0}

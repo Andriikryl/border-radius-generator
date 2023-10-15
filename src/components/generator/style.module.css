@@ -35,6 +35,10 @@
     top: -30px;
 }
 
+.form__a{
+    background-color: hsl(346, 84%, 61%, 1);
+}
+
 .b__description{
     position: absolute;
     display: grid;
@@ -44,6 +48,9 @@
     background-color: #c8b6ff;
     top: -30px;
     right: 0;
+}
+.form__b{
+    background-color: #c8b6ff;
 }
 
 .b__description span{
@@ -63,6 +70,9 @@
     top: 0;
     left: -40px;
 }
+.form__e{
+    background-color: #70e000;
+}
 .e__description span{
     color:  #70e000;
     font-size: 20px;
@@ -78,6 +88,9 @@
     background-color: #00a6fb;
     bottom: 0;
     left: -30px;
+}
+.form__h{
+    background-color: #00a6fb;
 }
 .h__description span{
     color:  #00a6fb;
@@ -95,6 +108,9 @@
     bottom: -40px;
     left: 0;
 }
+.form__d{
+    background-color: #d64045;
+}
 .d__description span{
     color:  #d64045;
     font-size: 20px;
@@ -110,6 +126,9 @@
     background-color: #540d6e;
     bottom: -30px;
     right: 0;
+}
+.form__c{
+    background-color: #540d6e;
 }
 .c__description span{
     color:  #540d6e;
@@ -127,6 +146,9 @@
     top: 0;
     right: -40px;
 }
+.form__f{
+    background-color: #2ec4b6;
+}
 .f__description span{
     color:  #2ec4b6;
     font-size: 20px;
@@ -142,6 +164,9 @@
     background-color: #ff6700;
     bottom: 0;
     right: -30px;
+}
+.form__g{
+    background-color: #ff6700;
 }
 .g__description span{
     color:  #ff6700;

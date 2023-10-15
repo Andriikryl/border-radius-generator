@@ -1,5 +1,6 @@
 import { useId } from "react";
 import style from "./style.module.css";
+import clsx from "clsx";
 interface InputProps {
   rangeLabel: string;
   numberLabel: string;
@@ -7,6 +8,7 @@ interface InputProps {
   set: (newValue: number) => void;
   min?: number;
   max?: number;
+  className?: string;
 }
 
 export function InputFrame({
@@ -16,12 +18,13 @@ export function InputFrame({
   set,
   min = -500,
   max = 500,
+  className,
 }: InputProps) {
   const id = useId();
   const rangeValumeId = `${id}-range-value`;
   const numberValumeId = `${id}-number-value`;
   return (
-    <form className={style.form}>
+    <form className={clsx(style.form, className)}>
       <div className={style.label__box}>
         <label className={style.label} htmlFor={rangeValumeId}>
           {rangeLabel}
