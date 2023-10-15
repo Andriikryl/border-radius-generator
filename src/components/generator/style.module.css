@@ -1,8 +1,14 @@
 .generator{
+    padding-block: 100px;
     background-color: #14213d;
-    height: 100dvh;
     display: grid;
     place-items: center;
+}
+
+.flex__group{
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
 }
 
 .main__box{
