@@ -9,6 +9,7 @@
     width: 300px;
     height: 300px;
     border: 3px dashed #ffb703;
+    margin-block-end: 30px;
 }
 
 .inner__box{
