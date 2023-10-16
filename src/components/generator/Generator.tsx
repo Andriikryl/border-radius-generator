@@ -55,6 +55,7 @@ export default function Generator() {
   return (
     <section className={style.generator}>
       <Container>
+        <h1 className={style.generator__title}>BORDER-RADIUS-GENERATOR</h1>
         <div className={style.flex__group}>
           <div className={style.form__group}>
             <InputFrame

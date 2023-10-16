@@ -3,10 +3,20 @@
     background-color: #14213d;
     display: grid;
     place-items: center;
+    overflow: hidden;
+}
+
+.generator__title{
+    padding: 20px;
+    background-color: #fca311;
+    color: #fffcff;
+    text-align: center;
+    margin-block-end: 200px;
 }
 
 .flex__group{
     display: flex;
+    justify-content: center;
     gap: 150px;
     flex-wrap: wrap;
 }
@@ -275,4 +285,27 @@
     height: 100px;
     border: 1px dashed white;
     aspect-ratio: 1/1;
+}
+
+.randomButton{
+    padding-block: 10px;
+    width: 100%;
+    color: #fffcff;
+    background-color: transparent;
+    border: 1px solid #2ec4b6;
+    cursor: pointer;
+}
+
+@media (max-width:500px) {
+    .main__box{
+        width: 200px;
+        height: 200px;
+        margin-inline: auto;
+    }
+    .flex__group{
+        gap: 100px;
+    }
+    .generator__title{
+        margin-block-end: 100px;
+    }
 }
