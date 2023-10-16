@@ -40,6 +40,17 @@ export default function Generator() {
   const handleVolumeChangeH = (newVolume: number) => {
     setGeneratorVolumeH(newVolume);
   };
+  const generateRandomBorderRadius = () => {
+    const getRandomValue = () => Math.floor(Math.random() * 101); // Random value between 0 and 100
+    setGeneratorVolume(getRandomValue());
+    setGeneratorVolumeSecond(getRandomValue());
+    setGeneratorVolumeThree(getRandomValue());
+    setGeneratorVolumeFour(getRandomValue());
+    setGeneratorVolumeE(getRandomValue());
+    setGeneratorVolumeF(getRandomValue());
+    setGeneratorVolumeG(getRandomValue());
+    setGeneratorVolumeH(getRandomValue());
+  };
 
   return (
     <section className={style.generator}>
@@ -139,6 +150,34 @@ export default function Generator() {
               >
                 <span>g</span>
               </div>
+              <div
+                className={style.circel__one}
+                style={{
+                  height: `${generatorVolumeE * 2}%`,
+                  width: `${generatorVolume * 2}%`,
+                }}
+              ></div>
+              <div
+                className={style.circel__two}
+                style={{
+                  height: `${generatorVolumeF * 2}%`,
+                  width: `${generatorVolumeSecond * 2}%`,
+                }}
+              ></div>
+              <div
+                className={style.circel__three}
+                style={{
+                  height: `${generatorVolumeG * 2}%`,
+                  width: `${generatorVolumeThree * 2}%`,
+                }}
+              ></div>
+              <div
+                className={style.circel__four}
+                style={{
+                  height: `${generatorVolumeH * 2}%`,
+                  width: `${generatorVolumeFour * 2}%`,
+                }}
+              ></div>
             </div>
             <div className={style.code__box}>
               <span className={style.code__roule}>border-radius:</span>
@@ -150,9 +189,15 @@ export default function Generator() {
                 <span>{generatorVolumeE}%</span>{" "}
                 <span>{generatorVolumeF}%</span>{" "}
                 <span>{generatorVolumeG}% </span>{" "}
-                <span>{generatorVolumeH}%,</span>{" "}
+                <span>{generatorVolumeH}%</span>{" "}
               </code>
             </div>
+            <button
+              className={style.randomButton}
+              onClick={generateRandomBorderRadius}
+            >
+              Generate Random Border Radius
+            </button>
           </div>
           <div className={style.form__group}>
             <InputFrame
